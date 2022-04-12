@@ -1,4 +1,4 @@
-import { Box, Container, Heading, HStack, Input, theme, VStack } from "@chakra-ui/react";
+import { Box, Container, Heading, HStack, Input, VStack } from "@chakra-ui/react";
 import CategoryTag from "../components/CategoryTag";
 
 import { myTheme } from '../utils/theme';
@@ -21,9 +21,8 @@ export default function Stock() {
             <Heading color={myTheme.colors.secondary} letterSpacing={2}>Stock</Heading>
             <HStack overflowX={'auto'} w={'full'}>
               {categories.map(category => (
-                <CategoryTag name={category} src={`./images/${category}.jpg`} />
+                <CategoryTag key={category} name={category} src={`./images/${category}.jpg`} />
               ))}
-               
             </HStack>
             <Box>
               <Input type={'search'} 

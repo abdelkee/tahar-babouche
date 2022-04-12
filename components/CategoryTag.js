@@ -1,4 +1,4 @@
-import { Avatar, Box, Tag, TagLabel, Text } from '@chakra-ui/react'
+import { Avatar, Box, Tag, Text } from '@chakra-ui/react'
 import React from 'react'
 import { myTheme } from '../utils/theme'
 
