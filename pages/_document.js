@@ -10,6 +10,8 @@ class MyDocument extends Document {
           <link rel="icon" href="/tb.png" />
           <meta name="theme-color" content="#fff" />
           <meta name="description" content="Tahar babouche business app" />
+          <meta name="theme-color" content="#17303c" />
+          <meta name="mobile-web-app-capable" content="yes"/>
           <title>TB</title>
         </Head>
         <body>
