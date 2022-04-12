@@ -7,7 +7,10 @@ class MyDocument extends Document {
         <Head>
           <link rel="manifest" href="/manifest.json" />
           <link rel="apple-touch-icon" href="/icon.png"></link>
+          <link rel="icon" href="/tb.png" />
           <meta name="theme-color" content="#fff" />
+          <meta name="description" content="Tahar babouche business app" />
+          <title>TB</title>
         </Head>
         <body>
           <Main />
