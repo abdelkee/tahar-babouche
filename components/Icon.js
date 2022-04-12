@@ -18,13 +18,12 @@ export default function Icon({icon, name, path}) {
     <Link href={path}>
       <Box
         onClick={handleClick}
-        bg={myTheme.colors.secondary}
         p={3}
-        border={'1px'}
-        borderColor={activePage === name ? 'white' : 'transparent'}
-        borderRadius={'50%'} 
-        fontSize={'24px'} 
-        color={activePage === name ? 'white' : myTheme.colors.accent2}>
+        fontSize={'24px'}
+        h={'full'}
+        borderTop={activePage === name && '2px'}
+        borderTopColor={myTheme.colors.primary}
+        color={activePage === name ? myTheme.colors.secondary : myTheme.colors.shade}>
             {icon}
       </Box>
     </Link>

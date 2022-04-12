@@ -10,7 +10,7 @@ export default function CategoryTag({name, src}) {
             size='lg' 
             bg={'white'} 
             border={'2px'}
-            borderColor={myTheme.colors.primary} 
+            borderColor={myTheme.colors.secondary} 
             borderRadius='full' 
             color={myTheme.colors.secondary}>
 

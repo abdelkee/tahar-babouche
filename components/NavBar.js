@@ -13,9 +13,12 @@ export default function NavBar() {
       w={'full'}
       h={'56px'}
       position={'fixed'}
+      zIndex={'3'}
       bottom={0}
       left={0}
-      bg={myTheme.colors.secondary}
+      bg={'white'}
+      borderTop={'1px'}
+      borderTopColor={myTheme.colors.shade}
       color={myTheme.colors.accent2}
       align={'center'}
       justify={'space-evenly'} >
