@@ -11,17 +11,17 @@ export default function NavBar() {
   return (
     <HStack 
       w={'full'}
-      h={'56px'}
+      h={'54px'}
       position={'fixed'}
       zIndex={'3'}
       bottom={0}
       left={0}
-      bg={'white'}
+      bgGradient={`linear(to-r,${myTheme.colors.secondary} ,${myTheme.colors.accent2})`}
       borderTop={'1px'}
       borderTopColor={myTheme.colors.shade}
-      color={myTheme.colors.accent2}
       align={'center'}
-      justify={'space-evenly'} >
+      justify={'space-evenly'}
+      px={4} >
 
           <Icon icon={<FaBoxes/>} name='stock' path={'/'} />
           <Icon icon={<FaBox/>} name='order' path={'/order'} />

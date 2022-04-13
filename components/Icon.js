@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Center } from "@chakra-ui/react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { myTheme } from "../utils/theme";
@@ -16,16 +16,18 @@ export default function Icon({icon, name, path}) {
   
   return (
     <Link href={path}>
-      <Box
+      <Center
         onClick={handleClick}
         p={3}
-        fontSize={'24px'}
+        fontSize={activePage === name ? '24px' : '22px'}
         h={'full'}
+        flex={'1'}
         borderTop={activePage === name && '2px'}
         borderTopColor={myTheme.colors.primary}
-        color={activePage === name ? myTheme.colors.secondary : myTheme.colors.shade}>
+        color={myTheme.colors.shade}
+        opacity={activePage === name ? 1 : 0.2}>
             {icon}
-      </Box>
+      </Center>
     </Link>
   )
 }
