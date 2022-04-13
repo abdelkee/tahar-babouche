@@ -1,4 +1,4 @@
-import { Center, Divider, Text, VStack } from '@chakra-ui/react'
+import { Center, Divider, HStack, Text, VStack } from '@chakra-ui/react'
 import { myTheme } from '../../utils/theme'
 import ImageBox from './ImageBox'
 
@@ -11,11 +11,12 @@ export default function Card({product}) {
         borderColor={myTheme.colors.shade} 
         borderRadius={'lg'} 
         shadow={'md'}
-        pb={2}>
+        pb={2}
+        >
 
             <ImageBox product={product} />
             <Center width={'80%'}><Divider orientation='horizontal' /></Center>
-            <Text color={myTheme.colors.secondary} letterSpacing={2}>{product.name}</Text>
+            <Text fontWeight={'bold'} color={myTheme.colors.secondary} letterSpacing={2}>{product.name}</Text>
 
     </VStack>
   )

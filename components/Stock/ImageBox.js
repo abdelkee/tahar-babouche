@@ -1,4 +1,4 @@
-import { Box, Circle, Image } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import { myTheme } from "../../utils/theme";
 
 export default function ImageBox({product}) {
@@ -9,15 +9,17 @@ export default function ImageBox({product}) {
             boxSize={'full'} 
             objectFit={'cover'} 
             borderRadius={'lg'}/>
+        
+        <Text 
+          bgGradient={`linear(to-r, ${myTheme.colors.secondary}, ${myTheme.colors.accent1})`}
+          position={'absolute'}
+          bottom={-2}
+          left={0}
+          px={2}
+          fontSize={'10px'} 
+          letterSpacing={2}
+          color={'white'}>{product.tag}</Text>
 
-        <Circle 
-            bg={myTheme.colors.secondary}
-            size={6}
-            fontSize={'xs'}
-            color={'white'}
-            position={'absolute'}
-            bottom={0}
-            left={2}> {product.quantity} </Circle>
     </Box>
   )
 }
