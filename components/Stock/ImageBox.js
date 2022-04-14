@@ -5,7 +5,7 @@ export default function ImageBox({product}) {
   return (
     <Box h={'100px'} w={'full'} position='relative' bg={'white'} >
         <Image 
-            src={'./images/maqloba.jpg'} 
+            src={product.image} 
             boxSize={'full'} 
             objectFit={'cover'} 
             borderRadius={'lg'}/>

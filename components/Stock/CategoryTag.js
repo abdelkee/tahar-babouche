@@ -17,7 +17,7 @@ export default function CategoryTag({name, src}) {
     }
   }
   return (
-    <Box as='button' onClick={handleClick}>
+    <Box onClick={handleClick}>
       <Tag 
           size='lg' 
           bg={categorySelected === name ? myTheme.colors.primary : 'white'} 

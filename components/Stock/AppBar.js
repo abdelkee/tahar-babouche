@@ -19,7 +19,6 @@ export default function AppBar() {
 
           <Heading color={myTheme.colors.shade} letterSpacing={2}>Stock</Heading>
           <CategoryList/>
-          <SearchBar/>
 
     </VStack>
   )

@@ -12,7 +12,6 @@ class MyDocument extends Document {
           <meta name="description" content="Tahar babouche business app" />
           <meta name="theme-color" content="#17303c" />
           <meta name="mobile-web-app-capable" content="yes"/>
-          <title>TB</title>
         </Head>
         <body>
           <Main />
