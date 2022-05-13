@@ -16,9 +16,9 @@ export default function NavBar() {
       zIndex={'3'}
       bottom={0}
       left={0}
-      bgGradient={`linear(to-r,${myTheme.colors.secondary} ,${myTheme.colors.accent2})`}
+      bgGradient={`linear(to-r,${secondary} ,${accent2})`}
       borderTop={'1px'}
-      borderTopColor={myTheme.colors.shade}
+      borderTopColor={shade}
       align={'center'}
       justify={'space-evenly'}
       px={4} >

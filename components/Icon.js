@@ -23,8 +23,8 @@ export default function Icon({icon, name, path}) {
         h={'full'}
         flex={'1'}
         borderTop={activePage === name && '2px'}
-        borderTopColor={myTheme.colors.primary}
-        color={myTheme.colors.shade}
+        borderTopColor={primary}
+        color={shade}
         opacity={activePage === name ? 1 : 0.2}>
             {icon}
       </Center>

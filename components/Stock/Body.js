@@ -1,7 +1,7 @@
 import { SimpleGrid, useDisclosure } from "@chakra-ui/react";
 import { useSelector } from "react-redux";
 import Card from "./Card";
-import ModalBox from "./ModalBox";
+import StockModal from "./StockModal";
 
 const products = [
     {
@@ -132,7 +132,7 @@ const products = [
     },
     {
       _id: '4',
-      name: '3qad',
+      name: 'pointu-3qad-chachia',
       category: 'maqloba',
       tag: 'Maqloba',
       quantity: '23',
@@ -185,7 +185,7 @@ export default function Body() {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <SimpleGrid columns={3} spacing={4} w={'full'} pb={14} px={4} pt={36}>
+    <SimpleGrid columns={2} spacing={4} w={'full'} pb={14} px={4} pt={36}>
         {
           categorySelected !== ''
           ?
@@ -199,7 +199,7 @@ export default function Body() {
             <Card key={product._id} product={product} onOpen={onOpen} />
           ))
         }
-        <ModalBox isOpen={isOpen} onClose={onClose} />
+        <StockModal isOpen={isOpen} onClose={onClose} />
     </SimpleGrid>
   )
 }
