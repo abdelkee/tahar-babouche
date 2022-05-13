@@ -63,7 +63,7 @@ export default function AppBar() {
 
             {/* Categories list */}
             {categories?.map(category => (
-              <Box onClick={() => handleClick(category)}>
+              <Box key={category} onClick={() => handleClick(category)}>
                 <Tag 
                     size='lg' 
                     bg={categorySelected === category ? primary : 'white'} 
@@ -75,6 +75,7 @@ export default function AppBar() {
                       <Center ml={-2} mr={2} ><BiCheckCircle size={'24px'} /></Center> :
                       <Avatar
                           src={`./images/${category}.jpg`}
+                          alt={category}
                           size='xs'
                           name='Segun Adebayo'
                           ml={-2}

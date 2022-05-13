@@ -52,7 +52,8 @@ function ImageBox({product}) {
     <AspectRatio w={'full'} ratio={1} >
       <Box position='relative' bg={'white'} borderRadius={'sm'}>
           <Image 
-              src={product.image} 
+              src={product.image}
+              alt={product.name}
               boxSize={'full'} 
               objectFit={'cover'} />
           

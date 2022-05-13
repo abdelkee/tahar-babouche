@@ -7,7 +7,7 @@ export default function Expense() {
   
   useEffect(() => {
     dispatch(setActivePage("expense"))
-  }, []) 
+  }, [dispatch]) 
 
     return (
       <div>

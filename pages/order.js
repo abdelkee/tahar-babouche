@@ -7,7 +7,7 @@ export default function Order() {
   
   useEffect(() => {
     dispatch(setActivePage("order"))
-  }, [])  
+  }, [dispatch])  
   
     return (
       <div>

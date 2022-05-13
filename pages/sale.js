@@ -7,7 +7,7 @@ export default function Sale() {
   
   useEffect(() => {
     dispatch(setActivePage("sale"))
-  }, []) 
+  }, [dispatch]) 
 
     return (
       <div>

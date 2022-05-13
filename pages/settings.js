@@ -7,7 +7,7 @@ export default function Settings() {
   
   useEffect(() => {
     dispatch(setActivePage("settings"))
-  }, []) 
+  }, [dispatch]) 
 
     return (
       <div>

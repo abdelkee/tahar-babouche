@@ -15,7 +15,7 @@ export default function Icon({icon, name, path}) {
 
   
   return (
-    <Link href={path}>
+    <Link href={path} passHref>
       <Center
         onClick={handleClick}
         p={3}

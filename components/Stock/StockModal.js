@@ -52,7 +52,7 @@ return (
       borderRadius={'md'}
       border={'1px'}
       borderColor={shade} >
-          <Image src={productSelected.image} objectFit={'cover'} borderRadius={'md'}/>
+          <Image src={productSelected.image} alt={productSelected.name} objectFit={'cover'} borderRadius={'md'}/>
   </AspectRatio>
 )
 }
